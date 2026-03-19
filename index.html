@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Rocha Eventos | Música & Entretenimento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sources/styles.css">
+    
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <div class="top-bar-item">
+                        <i class="bi bi-clock-fill"></i>
+                        <span>Seg - Sáb: 10:00 - 22:00</span>
+                    </div>
+                    <div class="top-bar-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>(11) 99999-9999</span>
+                    </div>
+                    <div class="top-bar-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>contato@joelrochaeventos.com.br</span>
+                    </div>
+                </div>
+                <div class="top-bar-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-spotify"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>Joel Rocha</span>
+                        <span>Música & Eventos</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#precos">Preços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <a href="#contato" class="btn btn-primary">
+                    <i class="bi bi-calendar-check"></i>
+                    Agendar
+                </a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <ul class="mobile-menu-links">
+            <li><a href="#sobre" onclick="toggleMobileMenu()">Sobre</a></li>
+            <li><a href="#servicos" onclick="toggleMobileMenu()">Serviços</a></li>
+            <li><a href="#precos" onclick="toggleMobileMenu()">Preços</a></li>
+            <li><a href="#galeria" onclick="toggleMobileMenu()">Galeria</a></li>
+            <li><a href="#avaliacoes" onclick="toggleMobileMenu()">Avaliações</a></li>
+            <li><a href="#contato" onclick="toggleMobileMenu()">Contato</a></li>
+        </ul>
+        <a href="#contato" class="btn btn-primary" style="margin-top: auto;" onclick="toggleMobileMenu()">
+            <i class="bi bi-calendar-check"></i>
+            Agendar Agora
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="bi bi-stars"></i>
+                <span>Música & Entretenimento Premium</span>
+                <i class="bi bi-stars"></i>
+            </div>
+            <h1 class="hero-title">
+                <span class="line1">Transforme Seu</span>
+                <span class="line2">Evento</span>
+                <span class="line3">em uma experiência única</span>
+            </h1>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary">
+                    <i class="bi bi-calendar-heart"></i>
+                    Agendar Evento
+                </a>
+                <a href="#servicos" class="btn btn-outline">
+                    <i class="bi bi-play-circle"></i>
+                    Conhecer Serviços
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="sources/img/Cantando.png" alt="Joel Rocha">
+                    </div>
+                    <div class="about-frame"></div>
+                    <div class="about-badge">
+                        <div class="number">20+</div>
+                        <div class="text">Anos de Carreira</div>
+                    </div>
+                    <div class="about-decor">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-tag">
+                        <span>Conheça o Artista</span>
+                    </div>
+                    <h2 class="section-title">
+                        <span class="gradient-text">Joel Rocha</span>
+                    </h2>
+                    <p class="about-text">
+                        Sou <strong>ator, cantor e compositor</strong> com uma trajetória marcada por grandes parcerias e experiências únicas no cenário artístico brasileiro. Tive o privilégio de trabalhar com nomes consagrados do teatro e da dramaturgia, como <strong>Amir Haddad, Felipe Martins e Nelson Portela</strong>.
+                    </p>
+                    <p class="about-text">
+                        Minha carreira musical é repleta de conquistas, incluindo <strong>segundo e terceiro lugares em festivais regionais</strong>. Participei de diversas bandas regionais, abrindo shows para artistas renomados como <strong>Placa Luminosa, Biafra e Elimar Santos</strong>.
+                    </p>
+                    <p class="about-text">
+                        Atualmente, sigo levando minha arte para bares, churrascarias e casas noturnas, sempre com a mesma paixão e energia que marcam minha carreira há anos.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="about-highlight-item">
+                            <i class="bi bi-mic-fill"></i>
+                            <span>Cantor Profissional</span>
+                        </div>
+                        <div class="about-highlight-item">
+                            <i class="bi bi-mask"></i>
+                            <span>Ator de Teatro</span>
+                        </div>
+                        <div class="about-highlight-item">
+                            <i class="bi bi-music-note-list"></i>
+                            <span>Compositor</span>
+                        </div>
+                    </div>
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="bi bi-chat-heart-fill"></i>
+                        Entre em Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span>Nossos Serviços</span>
+                </div>
+                <h2 class="section-title">
+                    O Que <span class="highlight">Oferecemos</span>
+                </h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-number">01</span>
+                    <div class="service-icon">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </div>
+                    <h3>Shows Musicais</h3>
+                    <p>Apresentações ao vivo com repertório variado, do MPB ao rock, passando por clássicos inesquecíveis que emocionam.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-number">02</span>
+                    <div class="service-icon">
+                        <i class="bi bi-heart-fill"></i>
+                    </div>
+                    <h3>Casamentos</h3>
+                    <p>Momentos especiais merecem trilha sonora especial. Cerimônias e festas com música ao vivo de qualidade.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-number">03</span>
+                    <div class="service-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <h3>Eventos Corporativos</h3>
+                    <p>Confraternizações, lançamentos e eventos empresariais com entretenimento profissional.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-number">04</span>
+                    <div class="service-icon">
+                        <i class="bi bi-cup-hot-fill"></i>
+                    </div>
+                    <h3>Bares e Restaurantes</h3>
+                    <p>Música ambiente e shows especiais para estabelecimentos que valorizam boa música e entretenimento.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-number">05</span>
+                    <div class="service-icon">
+                        <i class="bi bi-cake2-fill"></i>
+                    </div>
+                    <h3>Festas Privadas</h3>
+                    <p>Aniversários, formaturas e comemorações especiais com entretenimento personalizado.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-number">06</span>
+                    <div class="service-icon">
+                        <i class="bi bi-mic-fill"></i>
+                    </div>
+                    <h3>Animação de Eventos</h3>
+                    <p>Mestre de cerimônias e animação para manter seu evento sempre animado do início ao fim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video CTA -->
+    <div class="video-cta">
+        <div class="play-button" onclick="openVideoModal()">
+            <i class="bi bi-play-fill"></i>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="precos">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span>Investimento</span>
+                </div>
+                <h2 class="section-title">
+                    Nossos <span class="outline-text">Pacotes</span>
+                </h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing                    <div class="pricing-icon">
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="pricing-label">Essencial</div>
+                    <div class="pricing-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">800</span>
+                    </div>
+                    <div class="pricing-duration">por apresentação</div>
+                    <p class="pricing-desc">Ideal para eventos intimistas e pequenas comemorações</p>
+                    <ul class="pricing-features">
+                        <li><i class="bi bi-check-circle-fill"></i>Até 2 horas de show</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Voz e violão</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Repertório personalizado</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Som incluso (pequeno porte)</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Iluminação básica</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-outline">Escolher Pacote</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Mais Popular</div>
+                    <div class="pricing-icon">
+                        <i class="bi bi-gem"></i>
+                    </div>
+                    <div class="pricing-label">Premium</div>
+                    <div class="pricing-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">1.500</span>
+                    </div>
+                    <div class="pricing-duration">por apresentação</div>
+                    <p class="pricing-desc">Perfeito para casamentos e eventos de médio porte</p>
+                    <ul class="pricing-features">
+                        <li><i class="bi bi-check-circle-fill"></i>Até 4 horas de show</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Banda completa (duo/trio)</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Repertório personalizado</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Som profissional incluso</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Iluminação profissional</li>
+                        <li><i class="bi bi-check-circle-fill"></i>DJ nos intervalos</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-primary">Escolher Pacote</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-icon">
+                        <i class="bi bi-crown"></i>
+                    </div>
+                    <div class="pricing-label">Exclusivo</div>
+                    <div class="pricing-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">2.500</span>
+                    </div>
+                    <div class="pricing-duration">por apresentação</div>
+                    <p class="pricing-desc">Experiência completa para grandes eventos</p>
+                    <ul class="pricing-features">
+                        <li><i class="bi bi-check-circle-fill"></i>Evento completo (até 6h)</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Banda completa (quarteto)</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Cerimônia + festa</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Estrutura completa de som</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Iluminação cênica</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Mestre de cerimônias</li>
+                        <li><i class="bi bi-check-circle-fill"></i>Visita técnica inclusa</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-secondary">Escolher Pacote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span>Portfólio</span>
+                </div>
+                <h2 class="section-title">
+                    Nossa <span class="gradient-text">Galeria</span>
+                </h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="sources/img/Cantando.png" alt="Show ao vivo">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800" alt="Evento">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="sources/img/Foto2.png" alt="DJ Set">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800" alt="Violão">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="sources/img/teatro.png" alt="Microfone">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="sources/img/show.png" alt="Palco">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800" alt="Concerto">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="sources/img/Joel Rocha.jpg" alt="Show">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="diferenciais">
+        <div class="container">
+            <div class="features-grid">
+                <div class="features-image">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800" alt="Performance">
+                </div>
+                <div class="features-content">
+                    <div class="section-tag">
+                        <span>Por Que Nos Escolher</span>
+                    </div>
+                    <h2 class="section-title">
+                        Nossos <span class="highlight">Diferenciais</span>
+                    </h2>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="bi bi-check-lg"></i>
+                            <span>20+ Anos de Experiência</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-lg"></i>
+                            <span>Repertório Personalizado</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-lg"></i>
+                            <span>Equipamento Profissional</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-lg"></i>
+                            <span>Pontualidade Garantida</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-lg"></i>
+                            <span>Versatilidade Musical</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-lg"></i>
+                            <span>Atendimento Premium</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-lg"></i>
+                            <span>Formação em Teatro</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-lg"></i>
+                            <span>Presença de Palco</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Booking Section -->
+    <section class="booking" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span>Agende Seu Evento</span>
+                </div>
+                <h2 class="section-title">
+                    Solicite Um <span class="gradient-text">Orçamento</span>
+                </h2>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone / WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="eventType">Tipo de Evento</label>
+                        <select id="eventType" name="eventType" required>
+                            <option value="">Selecione uma opção...</option>
+                            <option value="casamento">Casamento</option>
+                            <option value="corporativo">Evento Corporativo</option>
+                            <option value="aniversario">Aniversário</option>
+                            <option value="bar">Bar / Restaurante</option>
+                            <option value="formatura">Formatura</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Data do Evento</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Detalhes do Evento</label>
+                    <textarea id="message" name="message" placeholder="Conte-nos mais sobre seu evento, local, horário, número de convidados..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-send-fill"></i>
+                    Enviar Solicitação
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span>Siga-nos</span>
+                </div>
+                <h2 class="section-title">
+                    Momentos <span class="highlight">Especiais</span>
+                </h2>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=400" alt="Instagram">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=400" alt="Instagram">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400" alt="Instagram">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400" alt="Instagram">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400" alt="Instagram">
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400" alt="Instagram">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span>Joel Rocha</span>
+                            <span>Música & Eventos</span>
+                        </div>
+                    </a>
+                    <p>Transformando momentos em memórias inesquecíveis através da música e do entretenimento de qualidade há mais de 20 anos.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-spotify"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#precos">Preços</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#avaliacoes">Avaliações</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Shows Musicais</a></li>
+                        <li><a href="#">Casamentos</a></li>
+                        <li><a href="#">Eventos Corporativos</a></li>
+                        <li><a href="#">Festas Privadas</a></li>
+                        <li><a href="#">Bares e Restaurantes</a></li>
+                        <li><a href="#">Animação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Horário de Atendimento</h4>
+                    <ul class="footer-hours">
+                        <li><span>Segunda - Sexta</span><span>10:00 - 20:00</span></li>
+                        <li><span>Sábado</span><span>10:00 - 18:00</span></li>
+                        <li><span>Domingo</span><span>Fechado</span></li>
+                    </ul>
+                    <div style="margin-top: 25px;">
+                        <p style="color: var(--gray); margin-bottom: 12px; display: flex; align-items: center; gap: 12px;">
+                            <i class="bi bi-telephone-fill" style="color: var(--primary);"></i>
+                            (11) 99999-9999
+                        </p>
+                        <p style="color: var(--gray); display: flex; align-items: center; gap: 12px;">
+                            <i class="bi bi-envelope-fill" style="color: var(--primary);"></i>
+                            contato@joelrochaeventos.com.br
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Joel Rocha Eventos. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="bi bi-heart-fill" style="color: var(--primary);"></i> para transformar eventos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para meu evento." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <button class="video-modal-close" onclick="closeVideoModal()">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script></script>
+</body>
+</html>
