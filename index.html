@@ -66,31 +66,40 @@
                     <i class="bi bi-calendar-check"></i>
                     Agendar
                 </a>
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
                     <i class="bi bi-list"></i>
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <button class="mobile-menu-close" onclick="toggleMobileMenu()">
-            <i class="bi bi-x-lg"></i>
-        </button>
-        <ul class="mobile-menu-links">
-            <li><a href="#sobre" onclick="toggleMobileMenu()">Sobre</a></li>
-            <li><a href="#servicos" onclick="toggleMobileMenu()">Serviços</a></li>
-            <li><a href="#precos" onclick="toggleMobileMenu()">Preços</a></li>
-            <li><a href="#galeria" onclick="toggleMobileMenu()">Galeria</a></li>
-            <li><a href="#avaliacoes" onclick="toggleMobileMenu()">Avaliações</a></li>
-            <li><a href="#contato" onclick="toggleMobileMenu()">Contato</a></li>
-        </ul>
-        <a href="#contato" class="btn btn-primary" style="margin-top: auto;" onclick="toggleMobileMenu()">
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+        <i class="bi bi-x-lg"></i>
+    </button>
+    <ul class="mobile-menu-links">
+        <li><a href="#sobre" onclick="toggleMobileMenu()">Sobre</a></li>
+        <li><a href="#servicos" onclick="toggleMobileMenu()">Serviços</a></li>
+        <li><a href="#precos" onclick="toggleMobileMenu()">Preços</a></li>
+        <li><a href="#galeria" onclick="toggleMobileMenu()">Galeria</a></li>
+        <li><a href="#avaliacoes" onclick="toggleMobileMenu()">Avaliações</a></li>
+        <li><a href="#contato" onclick="toggleMobileMenu()">Contato</a></li>
+    </ul>
+    <div class="mobile-menu-btn-wrapper">
+        <a href="#contato" class="btn btn-primary" onclick="toggleMobileMenu()">
             <i class="bi bi-calendar-check"></i>
             Agendar Agora
         </a>
     </div>
+    <div class="mobile-menu-social">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-spotify"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+    </div>
+</div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -272,7 +281,7 @@
                     <div class="pricing-label">Essencial</div>
                     <div class="pricing-price">
                         <span class="currency">R$</span>
-                        <span class="amount">800</span>
+                        <span class="amount">xxx</span>
                     </div>
                     <div class="pricing-duration">por apresentação</div>
                     <p class="pricing-desc">Ideal para eventos intimistas e pequenas comemorações</p>
@@ -293,7 +302,7 @@
                     <div class="pricing-label">Premium</div>
                     <div class="pricing-price">
                         <span class="currency">R$</span>
-                        <span class="amount">1.500</span>
+                        <span class="amount">xxx</span>
                     </div>
                     <div class="pricing-duration">por apresentação</div>
                     <p class="pricing-desc">Perfeito para casamentos e eventos de médio porte</p>
@@ -314,7 +323,7 @@
                     <div class="pricing-label">Exclusivo</div>
                     <div class="pricing-price">
                         <span class="currency">R$</span>
-                        <span class="amount">2.500</span>
+                        <span class="amount">xxx</span>
                     </div>
                     <div class="pricing-duration">por apresentação</div>
                     <p class="pricing-desc">Experiência completa para grandes eventos</p>
@@ -632,6 +641,6 @@
         </div>
     </div>
 
-    <script></script>
+    <script src="script.js"></script>
 </body>
 </html>

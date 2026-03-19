@@ -25,12 +25,31 @@ scrollTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle - FIXED
 function toggleMobileMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    
     mobileMenu.classList.toggle('active');
-    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    
+    if (mobileMenu.classList.contains('active')) {
+        document.body.classList.add('menu-open');
+        mobileMenuBtn.innerHTML = '<i class="bi bi-x-lg"></i>';
+    } else {
+        document.body.classList.remove('menu-open');
+        mobileMenuBtn.innerHTML = '<i class="bi bi-list"></i>';
+    }
 }
+
+// Close menu on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenu.classList.contains('active')) {
+            toggleMobileMenu();
+        }
+    }
+});
 
 // Video Modal
 function openVideoModal() {
