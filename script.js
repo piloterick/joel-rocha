@@ -121,7 +121,7 @@ document.getElementById('bookingForm').addEventListener('submit', function (e) {
 📝 *Detalhes:* ${data.message || 'Não informado'}`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/393518972673?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/21999774828?text=${encodedMessage}`, '_blank');
 
     this.reset();
     alert('Redirecionando para o WhatsApp...');
