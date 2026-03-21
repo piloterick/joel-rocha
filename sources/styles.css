@@ -334,14 +334,15 @@ img {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+background: #1eff00;
+background: linear-gradient(90deg, rgba(30, 255, 0, 1) 0%, rgba(0, 168, 0, 1) 65%, rgba(3, 99, 3, 1) 100%);
     color: var(--dark);
-    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 5px 20px rgba(2, 126, 54, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: var(--neon-glow);
+    box-shadow: 0 5px 20px rgba(18, 230, 29, 0.3);
 }
 
 .btn-secondary {
