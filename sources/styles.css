@@ -1723,61 +1723,6 @@ section {
     margin-top: 10px;
 }
 
-/* Instagram Section */
-.instagram {
-    background: var(--dark);
-    padding: 100px 0;
-}
-
-.instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
-}
-
-.instagram-item {
-    aspect-ratio: 1;
-    overflow: hidden;
-    border-radius: 15px;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.4s;
-}
-
-.instagram-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s;
-}
-
-.instagram-item:hover img {
-    transform: scale(1.15);
-}
-
-.instagram-item::before {
-    content: '\F437';
-    font-family: 'bootstrap-icons';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.9), rgba(0, 180, 216, 0.9));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: var(--light);
-    opacity: 0;
-    transition: opacity 0.4s;
-}
-
-.instagram-item:hover::before {
-    opacity: 1;
-}
-
-.instagram-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(255, 107, 53, 0.3);
-}
 
 /* Footer */
 .footer {
@@ -2419,7 +2364,7 @@ body.menu-open {
 /* Video Grid */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-top: 40px;
 }
@@ -2443,7 +2388,6 @@ body.menu-open {
     width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 16/9;
 }
 
 .video-overlay {
@@ -2477,13 +2421,13 @@ body.menu-open {
 /* Responsivo */
 @media (max-width: 1024px) {
     .video-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .video-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     
