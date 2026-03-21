@@ -247,4 +247,30 @@ document.querySelectorAll('.service-card, .pricing-card').forEach(card => {
     });
 });
 
+// Pausar outros vídeos quando um começar a tocar
+document.addEventListener('DOMContentLoaded', function() {
+    const videos = document.querySelectorAll('.video-item video');
+    
+    videos.forEach(video => {
+        video.addEventListener('play', function() {
+            // Pausa todos os outros vídeos
+            videos.forEach(otherVideo => {
+                if (otherVideo !== video) {
+                    otherVideo.pause();
+                }
+            });
+        });
+    });
+});
+
+const video = document.getElementById("video");
+
+document.addEventListener("visibilitychange", function() {
+    if (document["hidden"]) {
+        video.pause();
+    } else {
+        video.play();
+    }
+});
+
 console.log('🎵 Joel Rocha Eventos - Site carregado com sucesso!');

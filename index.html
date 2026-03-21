@@ -59,7 +59,7 @@
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#precos">Preços</a></li>
                     <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#contato-footer">Contato</a></li>
                 </ul>
                 <a href="#contato" class="btn btn-primary">
                     <i class="bi bi-calendar-check"></i>
@@ -82,7 +82,7 @@
         <li><a href="#servicos" onclick="toggleMobileMenu()">Serviços</a></li>
         <li><a href="#precos" onclick="toggleMobileMenu()">Preços</a></li>
         <li><a href="#galeria" onclick="toggleMobileMenu()">Galeria</a></li>
-        <li><a href="#contato" onclick="toggleMobileMenu()">Contato</a></li>
+        <li><a href="#contato-footer" onclick="toggleMobileMenu()">Contato</a></li>
     </ul>
     <div class="mobile-menu-btn-wrapper">
         <a href="#contato" class="btn btn-primary" onclick="toggleMobileMenu()">
@@ -351,6 +351,7 @@
                     Nossa <span class="gradient-text">Galeria</span>
                 </h2>
             </div>
+            <h2 class="grid-title">Fotos</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="sources/img/Cantando.png" alt="Show ao vivo">
@@ -401,6 +402,50 @@
                     </div>
                 </div>
             </div>
+
+            <h2 class="grid-title">Vídeos</h2>
+<div class="video-grid">
+    <div class="video-item">
+        <video controls id="video">
+            <source src="sources/video/Video1.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <i class="bi bi-play-circle-fill"></i>
+        </div>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="sources/video/Video2.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <i class="bi bi-play-circle-fill"></i>
+        </div>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="sources/video/Video3.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <i class="bi bi-play-circle-fill"></i>
+        </div>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="sources/video/Video4.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <i class="bi bi-play-circle-fill"></i>
+        </div>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="sources/video/Video5.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <i class="bi bi-play-circle-fill"></i>
+        </div>
+    </div>
+</div>
         </div>
     </section>
 
@@ -578,7 +623,7 @@
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#precos">Preços</a></li>
                         <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#contato-footer">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -593,7 +638,7 @@
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Contatos</h4>
+                    <h4 id="contato-footer">Contatos</h4>
                     <div style="margin-top: 25px;">
                         <p style="color: var(--gray); margin-bottom: 12px; display: flex; align-items: center; gap: 12px;">
                             <i class="bi bi-telephone-fill" style="color: var(--primary);"></i>
